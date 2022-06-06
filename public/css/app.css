@@ -1,7 +1,11 @@
+/* GENERALE */
+*{
+    margin: 0;
+}
+/* NAVIGATION BAR */
 .nav {
     background-color: white;
 }
-
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -11,23 +15,24 @@
     margin: 0 auto;
     line-height: 50px;
 }
-
-/*LIST CHANGES */
 ul {
     list-style-type: none;
     display: flex;
     text-align: center;
-    flex-direction: row;
-
-    
+    flex-direction: row;    
 }
 li {
     margin: 0 15px;
     padding: 5px;
     font-size: 20px;    
 }
-
 .nav-img {
     display: flex;
     padding: 0 20px;
+}
+/* JUMBOTRON */
+.jumbotron{
+    background-image: url('../images/jumbotron.jpg');
+    height: 60vh;
+    width: 100%;
 }

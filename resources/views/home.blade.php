@@ -38,7 +38,8 @@
     </header>
     {{-- main --}}
     <main>
-
+        <section class="jumbotron"></section>
+        
     </main>
     {{-- footer --}}
     <footer>
