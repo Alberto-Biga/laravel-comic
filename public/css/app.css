@@ -55,3 +55,14 @@ main{
 .card{
     width: calc(100% / 6);    
 }
+
+.none{
+    text-decoration: none;
+    color: black;
+}
+
+.center{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}

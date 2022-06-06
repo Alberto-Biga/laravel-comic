@@ -40,19 +40,12 @@
     <main>
         <section class="jumbotron"></section>
 
-        <div class="container">
-            <div class="row">
-                @foreach ($fumetti as $key => $info )                    
-                    <div class="card">
-                        <a class="none" href="{{route('prodotto', ['id' => $key])}}">
-                        <img src="{{$info['thumb']}}" alt="">
-                        <h4>
-                            {{$info['title']}}    
-                        </h4>                        
-                        </a>
-                    </div>                    
-                @endforeach    
-            </div>    
+        <div class="center">
+            <h2>{{$singoloFumetto['title']}}</h2>
+            <img src="{{$singoloFumetto['thumb']}}" alt="">
+            <h4>{{$singoloFumetto['type']}}</h4>
+            <h6>{{$singoloFumetto['sale_date']}}</h6>
+            <h4>{{$singoloFumetto['price']}}</h4>            
         </div>
         
         

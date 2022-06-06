@@ -15,10 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $array_config = config('comics');
-
-    $data = [
-        'comic' => $array_config
-    ];
-    return view('home', $data);
+    $fumetti = config('comics');
+    dump($fumetti);
+    
+    return view('home', ['fumetti' => $fumetti]);
 });
+
+Route::get('/{id}', function ($id) {
+
+    $fumetti = config('comics');
+    dump($id);
+    $fumetto = $fumetti[$id];
+    
+    return view('prodotto', ['singoloFumetto' => $fumetto]);
+})->name('prodotto');
+
