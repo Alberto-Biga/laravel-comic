@@ -39,6 +39,21 @@
     {{-- main --}}
     <main>
         <section class="jumbotron"></section>
+
+        <div class="container">
+            <div class="row">
+                @foreach ($comic as $info )
+                    <div class="col card">
+                        <img src="{{$info['thumb']}}" alt="">
+                        <h4>
+                            {{$info['title']}}    
+                        </h4>
+                        
+                    </div>
+                @endforeach    
+            </div>    
+        </div>
+        
         
     </main>
     {{-- footer --}}
